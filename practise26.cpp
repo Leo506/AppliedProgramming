@@ -50,8 +50,7 @@ int main()
 			cout << "*";
 		}
 
-		cout.width(20 - (1 + 2*(h-1)));
-		cout << "";
+		cout.width(20 - (2*(h-1)));
 	}
 
 	cout << endl;
