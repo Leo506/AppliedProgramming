@@ -11,7 +11,13 @@ int main()
     int count = 0;
     for (int i = 0; i < size; i++)
     {
-        if ((x >> i) & 1)
+        unsigned int tmp = x >> i;
+        if (!tmp)
+        {
+            break;
+        }
+
+        if (tmp & 1)
         {
             count++;
         

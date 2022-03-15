@@ -14,13 +14,7 @@ int main()
     }
 
 
-    const int offset = 4;
-    const int base = 1;
-
-    
-    cout.setf(ios::fixed);
-    cout.precision(0);
-    cout << n*n - offset * ((n - base) / 2) << endl;
+    cout << n*n - 2*n - 2 << endl;
 
     return 0;
 }
