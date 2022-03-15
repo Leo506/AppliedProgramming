@@ -14,7 +14,7 @@ int main()
     }
 
 
-    cout << n*n - 2*n - 2 << endl;
+    cout << n*n - 2*n + 2 << endl;
 
     return 0;
 }
