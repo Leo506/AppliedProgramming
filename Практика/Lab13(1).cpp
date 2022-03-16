@@ -38,11 +38,11 @@ double integral(double (*func)(double x), int points, double a, double b)
 {
 	double h = (b - a) / points;
 
-	double x = a;
+	double x = a + h / 2;
 	double sum = 0;
 	for (int i = 1; i < points; i++)
 	{
-		sum += func(x + h / 2);
+		sum += func(x);
 		x += h;
 	}
 
