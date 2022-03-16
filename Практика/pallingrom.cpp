@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     unsigned short int val;
-    bool ispalindrome = true;
+    bool isPalindrome = true;
 
     cin >> val;
     
