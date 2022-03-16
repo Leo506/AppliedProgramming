@@ -26,6 +26,11 @@ int main()
         {
             cout << NOMINAL_VALUES[i] << " ";
         }
+
+	if (money == 0)
+	{
+	    break;
+	}
     }
 
     return 0;
