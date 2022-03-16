@@ -16,7 +16,7 @@ int main()
 
     for (int i = 0; i < countOfIterates; ++i)
     {
-        if (copyVal == 0)
+        if (!copyVal)
         {
             mirrorVal = mirrorVal << (countOfIterates - i - 1);
             break;
