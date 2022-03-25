@@ -36,6 +36,13 @@ int main()
 	cout << "down: " << bottomSum<< endl;
 	cout << "left: " << leftSum<< endl;
 
+	for (int i = 0; i < size; i++)
+	{
+		delete[] matrix[i];
+	}
+
+	delete[] matrix;
+
 	return 0;
 }
 
