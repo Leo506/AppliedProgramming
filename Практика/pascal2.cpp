@@ -3,7 +3,6 @@
 using namespace std;
 
 int* pascal(int n);
-long factorial(int num);
 
 int main()
 {
@@ -35,21 +34,14 @@ int* pascal(int n)
 {
     int* array = new int[n+1];
 
-    for (int i = 0; i < n + 1; i++)
+    int currentElement = 1;
+    array[0] = currentElement;
+    for (int i = 1; i <= n; i++)
     {
-        array[i] = (int)(factorial(n) / (factorial(i) * factorial(n - i)));
+        currentElement *= (n - i + 1);
+        currentElement /= i;
+        array[i] = currentElement;
     }
 
     return array;
-}
-
-
-long factorial(int num)
-{
-    if (num <= 0)
-    {
-        return 1;
-    }
-
-    return num * factorial(num - 1);
 }
